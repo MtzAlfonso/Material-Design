@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Material Design</string>
-    <string name="btn_primary">Primary Color</string>
-    <string name="btn_dark_primary">Dark Primary Color</string>
-    <string name="btn_accent">Accent Color</string>
+    <string name="btn_click">Click</string>
+    <string name="txt_titulo">Hello World!!</string>
+    <string name="mensaje">Favorito :)</string>
+    <string name="txt_action">Acción</string>
 </resources>
