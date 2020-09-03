@@ -3,10 +3,10 @@
 Aplicando tema de material design a un proyecto Android
 
 ## Activity principal
-![Screenshot](screenshots/screenshot.jpg =100x)
+<img src="screenshots/screenshot.jpg" alt="Screenshot" width="100px"/>
 
 ## Snackbar
-![Screenshot Snackbar](screenshots/screenshot_snackbar.jpg =100x)
+<img src="screenshots/screenshot_snackbar.jpg" alt="Screenshot Snackbar" width="100px"/>
 
 ## SwipeRefresh
-![Screenshot Refresh](screenshots/screenshot_refresh.jpg =100x)
+<img src="screenshots/screenshot_refresh.jpg" alt="Screenshot Refresh" width="100px"/>
