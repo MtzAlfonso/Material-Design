@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.coordinatorlayout.widget.CoordinatorLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingHorizontal="10dp"
-    android:paddingVertical="10dp"
+    android:paddingHorizontal="@dimen/activity_horizontal_margin"
+    android:paddingVertical="@dimen/activity_vertical_margin"
     tools:context=".MainActivity"
+    android:background="@color/colorGray"
     >
 
     <RelativeLayout
@@ -15,27 +16,27 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
-            android:id="@+id/srRefresh"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <ListView
-                android:id="@+id/lvMyList"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-            </ListView>
-
-        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
-
         <TextView
             android:id="@+id/txtHola"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/txt_titulo"
-            android:layout_below="@+id/srRefresh"
-             />
+            />
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/srRefresh"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/list_height"
+            android:layout_below="@+id/txtHola">
+
+            <ListView
+                android:id="@+id/lvMyList"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/list_height">
+
+            </ListView>
+
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 
         <Button
             android:id="@+id/btnClick"
@@ -43,7 +44,7 @@
             android:layout_height="wrap_content"
             android:text="@string/btn_click"
             android:theme="@style/myRaisedButton"
-            android:layout_below="@+id/txtHola"
+            android:layout_below="@+id/srRefresh"
             />
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -56,6 +57,46 @@
             android:tint="@color/colorWhite"
             android:layout_below="@+id/btnClick"
            />
+
+        <androidx.cardview.widget.CardView
+            android:layout_centerHorizontal="true"
+            android:layout_width="@dimen/card_width"
+            android:layout_height="@dimen/card_height"
+            android:layout_below="@+id/fabMiFAB"
+            card_view:cardCornerRadius="4dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/ivCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/bg_lollipop" />
+                
+                <TextView
+                    android:id="@+id/tvCardTitle"
+                    android:paddingHorizontal="@dimen/activity_horizontal_margin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/card_title"
+                    android:textSize="@dimen/card_title"
+                    android:textStyle="bold"
+                    android:layout_below="@+id/ivCard"/>
+
+                <TextView
+                    android:id="@+id/tvCardDescription"
+                    android:paddingHorizontal="@dimen/activity_horizontal_margin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/card_description"
+                    android:layout_below="@+id/tvCardTitle"/>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
     </RelativeLayout>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

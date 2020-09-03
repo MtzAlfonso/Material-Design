@@ -2,5 +2,11 @@
 
 Aplicando tema de material design a un proyecto Android
 
-![Screenshot](screenshots/screenshot.png)
-![Screenshot Snackbar](screenshots/screenshot_snackbar.png)
+## Activity principal
+![Screenshot](screenshots/screenshot.jpg)
+---
+## Snackbar
+![Screenshot Snackbar](screenshots/screenshot_snackbar.jpg)
+---
+## SwipeRefresh
+![Screenshot Refresh](screenshots/screenshot_refresh.jpg)
