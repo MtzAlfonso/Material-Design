@@ -4,4 +4,14 @@
     <string name="txt_titulo">Hello World!!</string>
     <string name="mensaje">Favorito :)</string>
     <string name="txt_action">Acción</string>
+    <string-array name="planetas">
+        <item>Mercurio</item>
+        <item>Venus</item>
+        <item>Tierra</item>
+        <item>Marte</item>
+        <item>Júpiter</item>
+        <item>Saturno</item>
+        <item>Urano</item>
+        <item>Neptuno</item>
+    </string-array>
 </resources>
